@@ -1,39 +1,40 @@
 name: CI
 
 on:
-  # Trigger the action manually from the UI
-  workflow_dispatch:
-  # Trigger the action when I create or push a branch
   push:
+    branches: 
+    - "main"
+    - "dev"
+  pull_request:
     branches:
-      - 'main'
-      - 'dev'
-
-env:
-  DOCKER_IMAGE_NAME: info-projekt
+    - "main"
+    - "dev"
 
 jobs:
-  docker:
-    name: Build and Push Docker Image
+  build:
+    name: Test & Build Angular Project
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+        - 22
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout the source code
+      uses: actions/checkout@v4
       
-      - name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ secrets.REGISTRY_URL }}
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
       
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+    - name: Install dependencies
+      run: npm ci
       
-      - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: true
-          tags: |
-            ${{ secrets.REGISTRY_URL }}/info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
+    - name: Run tests
+      run: npm run test:ci
+      
+    - name: Build
+      run: npm run build
