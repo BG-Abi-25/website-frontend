@@ -3,10 +3,11 @@ name: CI
 on:
   # Trigger the action manually from the UI
   workflow_dispatch:
-  # Trigger the action when I create or push a `release/**` branch
+  # Trigger the action when I create or push a branch
   push:
     branches:
-      - 'release/**'
+      - 'main'
+      - 'dev'
 
 env:
   DOCKER_IMAGE_NAME: info-projekt
@@ -38,4 +39,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: info-projekt/$DOCKER_IMAGE_NAME:latest
+          tags: |
+            info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
