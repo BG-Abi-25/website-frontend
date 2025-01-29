@@ -36,4 +36,4 @@ jobs:
           context: .
           push: true
           tags: |
-            info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
+            ${{ secrets.REGISTRY_URL }}/info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
