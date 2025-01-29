@@ -11,7 +11,6 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: info-projekt
-  DOCKER_REGISTRY_URL: docker.piste.dev
 
 jobs:
   docker:
