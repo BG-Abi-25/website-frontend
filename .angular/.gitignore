@@ -1,0 +1,42 @@
+# Angular build output
+/dist
+/tmp
+/out-tsc
+
+# Node modules
+/node_modules
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Environment files
+/src/environments/*.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled output
+*.js
+*.js.map
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Coverage reports
+/coverage
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local configuration files
+/.angular
+/.angular-cli.json
+/angular.json
+/package-lock.json
+/yarn.lock
