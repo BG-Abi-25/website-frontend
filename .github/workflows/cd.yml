@@ -12,6 +12,9 @@ jobs:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v4
+        
       - name: Login to Docker Registry
         uses: docker/login-action@v3
         with:
@@ -45,6 +48,16 @@ jobs:
             docker pull ${{ secrets.REGISTRY_URL }}/info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
             docker stop ${{ env.DOCKER_CONTAINER_NAME }} || true
             docker rm ${{ env.DOCKER_CONTAINER_NAME }} || true
-            docker run -d --name ${{ env.DOCKER_CONTAINER_NAME }} ${{ secrets.REGISTRY_URL }}/info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
+
+            if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+              PORT=8085
+            elif [[ "${{ github.ref }}" == "refs/heads/dev" ]]; then
+              PORT=8086
+            else
+              echo "No specific port defined for this branch."
+              exit 1  # Exit if the branch is neither main nor dev
+            fi
+
+            docker run -d --name ${{ env.DOCKER_CONTAINER_NAME }} -p $PORT:80 ${{ secrets.REGISTRY_URL }}/info-projekt/${{ env.DOCKER_IMAGE_NAME }}:${{ github.ref == 'refs/heads/main' && 'latest' || 'dev' }}
 
   
