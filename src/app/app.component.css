@@ -1,5 +1,10 @@
 /* Navbar styles */
 .navbar {
+  font-family: "Roboto", sans-serif;
+  position: fixed;  /* Fixiert die Navbar */
+  top: 7px;           /* Immer oben */
+  width: 97%;      /* Nimmt die gesamte Breite ein */
+  z-index: 1000;    /* Stellt sicher, dass sie über anderen Elementen bleibt */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +46,7 @@
 .nav-links a:hover {
   background-color: #0056b3; /* Dunklerer Blauton */
   border-color: #0056b3;
-  transform: translateY(-3px); /* Leichtes Anheben */
+  transform: scale(1.05); /* Leichtes Anheben */
 }
 
 .nav-links .active {
@@ -62,9 +67,13 @@
   position: absolute;
   background-color: #333;
   min-width: 160px;
+  max-width: 200px; /* Begrenzung der Breite */
   z-index: 1;
-  border-radius: 8px; /* Abgerundete Ecken für Dropdown */
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* Verhindert Überlauf */
+  right: 0; /* Richtet das Menü am rechten Rand aus */
+  margin-top: 15px;
 }
 
 .dropdown-content a {
@@ -75,7 +84,9 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #575757;
+  background-color: #0056b3; /* Dunklerer Blauton */
+  border-color: #0056b3;
+  transform: none; /* Entfernt das Anheben für Dropdown-Links */
 }
 
 .dropdown:hover .dropdown-content {
@@ -83,5 +94,6 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #575757;
+  background-color: #0056b3; /* Dunklerer Blauton */
+  border-color: #0056b3;
 }
