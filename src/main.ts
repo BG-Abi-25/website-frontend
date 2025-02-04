@@ -4,6 +4,3 @@ import { BlogComponent } from './app/blog/blog.component';
 
 bootstrapApplication(BlogComponent, appConfig)
   .catch((err) => console.error(err));
-
-bootstrapApplication(BlogComponent, appConfig)
-  .catch((err) => console.error(err));
