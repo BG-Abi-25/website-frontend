@@ -1,0 +1,30 @@
+.component {
+    background-color: #817c7c;
+    padding: 16px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+
+}
+
+.image{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.component-text {
+    margin-left: 16px;
+    color: white;
+
+}
+
+.component-text-header {
+    margin: 0%;
+}
+
+:hover.component {
+    background-color: #8d8686;
+    cursor: pointer;
+}
