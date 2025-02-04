@@ -1,9 +1,12 @@
 .component {
     background-color: #817c7c;
-    padding: 16px;
+    padding: 0.5%;
     display: flex;
     width: 50%;
     justify-content: flex-start;
+    border-radius: 2%;
+    overflow: hidden;
+    margin-left: 3%;
 
 }
 
@@ -11,13 +14,14 @@
     width: 50%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2%;
 
 }
 
 .component-text {
     margin-left: 16px;
     color: white;
-
+    font-size: clamp(0.8vw, 1vw, 1.6vw);
 }
 
 .component-text-header {
