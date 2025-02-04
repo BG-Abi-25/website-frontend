@@ -1,6 +1,6 @@
 /* Navbar styles */
 .navbar {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito";
   position: fixed;  /* Fixiert die Navbar */
   top: 7px;           /* Immer oben */
   width: 97%;      /* Nimmt die gesamte Breite ein */
@@ -66,13 +66,12 @@
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 160px;
-  max-width: 200px; /* Begrenzung der Breite */
   z-index: 1;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden; /* Verhindert Überlauf */
-  right: 0; /* Richtet das Menü am rechten Rand aus */
+  left: 50%; /* Setzt den linken Rand auf die Mitte des Buttons */
+  transform: translateX(-50%); /* Verschiebt das Dropdown um 50% seiner Breite nach links, um es mittig auszurichten */
   margin-top: 15px;
 }
 
