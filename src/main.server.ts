@@ -6,3 +6,4 @@ const bootstrap = () => bootstrapApplication(BlogComponent, config);
 
 
 export default bootstrap;
+
