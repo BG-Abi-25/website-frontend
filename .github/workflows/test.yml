@@ -11,8 +11,8 @@ on:
     - dev
 
 jobs:
-  build:
-    name: Test Angular Project
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
     strategy:
