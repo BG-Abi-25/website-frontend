@@ -2,7 +2,7 @@
 .navbar {
   font-family: "Nunito";
   position: fixed;  /* Fixiert die Navbar */
-  top: 7px;           /* Immer oben */
+  top: 0px;           /* Immer oben */
   width: 97%;      /* Nimmt die gesamte Breite ein */
   z-index: 1000;    /* Stellt sicher, dass sie über anderen Elementen bleibt */
   display: flex;

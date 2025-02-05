@@ -4,10 +4,10 @@
     display: flex;
     width: 50%;
     justify-content: flex-start;
-    border-radius: 2%;
+    border-radius: 1vw;
     overflow: hidden;
     margin-left: 3%;
-    margin-top: 2%;
+    margin-top: 1%;
 
 }
 
@@ -15,7 +15,7 @@
     width: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2%;
+    border-radius: 1vw;
 
 }
 
@@ -27,9 +27,21 @@
 
 .component-text-header {
     margin: 0%;
+    font-size:  clamp(0.5vw, 2vw, 4.5vw);
+    max-height: 4.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.component-text-header p {
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 :hover.component {
     background-color: #8d8686;
     cursor: pointer;
+    
 }
+
