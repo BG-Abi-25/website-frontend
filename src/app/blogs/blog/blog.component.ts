@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-blog',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
+  @Input() pictures: string = ''; 
+  @Input() head: string = ''; 
+  @Input() preview: string = ''; 
 
 }
