@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.component.css"> <!-- Verknüpfung mit CSS-Datei -->
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a routerLink="/web-design">Web Design</a>
+          <a routerLink="/seo">SEO</a>
+          <a routerLink="/marketing">Marketing</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Schulplattformen</a>
+        <div class="dropdown-content">
+          <a href="https://bw.schule/login" target="_blank">Moodle</a>
+          <a href="https://perseus.webuntis.com/WebUntis/?school=burg-gym#/basic/login">Untis</a>
+          <a href="https://filr-schulen.schorndorf.de/filr/login">Cloud</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+</body>
+</html>
