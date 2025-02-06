@@ -1,0 +1,47 @@
+.component {
+    background-color: #817c7c;
+    padding: 0.5%;
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-left: 2vw;
+    margin-top: 1%;
+
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+
+}
+
+.component-text {
+    margin-left: 16px;
+    color: white;
+    font-size: clamp(0.8vw, 1vw, 1.6vw);
+}
+
+.component-text-header {
+    margin: 0%;
+    font-size:  clamp(0.5vw, 2vw, 4.5vw);
+    max-height: 4.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.component-text-header p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+:hover.component {
+    background-color: #8d8686;
+    cursor: pointer;
+    
+}
+
