@@ -5,7 +5,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 
 @Component({
   selector: 'app-root',
-  imports: [BlogsComponent, NavbarComponent],
+  imports: [BlogsComponent, NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
