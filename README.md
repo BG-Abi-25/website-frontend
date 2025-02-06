@@ -2,6 +2,11 @@
 
 Das Frontend-Repository der Website, die im Zuge des Projektes im Informatik-LK des Abitur-Jahrgangs 2025 am Burg-Gymnasium Schorndorf entwickelt wird.
 
+## Konventionen
+
+- [Conventional Commits](https://conventionalcommits.org)
+- [Conventional Branch Names](https://www.geeksforgeeks.org/how-to-naming-conventions-for-git-branches/)
+
 ## Testumgebungen
 
 Für die Branches `main` und `dev` werden dedizierte Testumgebungen bereitgestellt, die unter den folgenden Adressen erreichbar sind:
