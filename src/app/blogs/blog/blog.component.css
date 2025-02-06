@@ -20,23 +20,24 @@
 }
 
 .component-text {
-    margin-left: 16px;
+    margin-left: 1vw;
     color: white;
-    font-size: clamp(0.8vw, 1vw, 1.6vw);
+    font-size: clamp(0.8vw, 1.3vw, 1.6vw);
+
 }
 
 .component-text-header {
     margin: 0%;
     font-size:  clamp(0.5vw, 2vw, 4.5vw);
-    max-height: 4.5vw;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+    height: auto;
+    
 }
 
-.component-text-header p {
-    max-width: 100%;
-    word-wrap: break-word;
+.component-text-preview {
+    margin-top: auto;
+    overflow-y: hidden;
+    break-inside: auto;
+    
 }
 
 :hover.component {
