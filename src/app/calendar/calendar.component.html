@@ -1,0 +1,6 @@
+<div class="calendar-container">
+  <div class="event" *ngFor="let event of events">
+    <div class="date">{{ event.date | date:'dd MMM, yyyy' }}</div>
+    <div class="title">{{ event.title }}</div>
+  </div>
+</div>

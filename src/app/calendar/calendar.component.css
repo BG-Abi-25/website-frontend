@@ -1,0 +1,25 @@
+.calendar-container {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 300px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+.event {
+  border-left: 3px solid orange;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-weight: bold;
+  color: lightgray;
+}
+
+.title {
+  color: orange;
+}
