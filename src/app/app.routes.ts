@@ -6,7 +6,7 @@ import { EintragComponent } from './blogs/blog/eintrag/eintrag.component';
 
 export const routes: Routes = [
     {path: '', component: BlogsComponent},  
-    {path: '{{ header_text }}', component: EintragComponent},
+    {path: 'Eintrag', component: EintragComponent},
     {path: '**', redirectTo: '' }
 
     ]
