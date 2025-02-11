@@ -1,3 +1,15 @@
 <div class="calendar-container">
   <mat-calendar></mat-calendar>
+  <div>
+    <h3>Events hinzufügen</h3>
+    <input #eventTitle placeholder="Event Titel" />
+    <input #eventDate type="date" />
+    <button (click)="addEvent(eventDate.value ? new Date(eventDate.value) : null, eventTitle.value ? eventTitle.value : null)">Hinzufügen</button>
+  </div>
+  <div>
+    <h3>Events</h3>
+    <ul>
+      <li *ngFor="let event of events">{{ event.date | date: 'shortDate' }}: {{ event.title }}</li>
+    </ul>
+  </div>
 </div>
