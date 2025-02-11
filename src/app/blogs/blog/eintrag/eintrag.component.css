@@ -1,19 +1,29 @@
 .entry {
-    text-align: center;
+    width: 40vw;
+    margin: auto;
 }
 
 .image {
     height: 100%;
     object-fit: cover;
-    max-width: 80%;
     border-radius: 1vw;
-    max-height: 40vw;
+    width: 40vw;
 }
 
 .info {
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .author {
-    margin-right: 2vw;
+    color: white;
+}
+
+.hashtag {
+    color: blue;
+}
+
+.article {
+    color: white;
+    font-size: clamp(0.5vw, 1vw, 2vw);
 }
