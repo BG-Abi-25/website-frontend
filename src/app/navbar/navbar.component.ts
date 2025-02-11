@@ -1,14 +1,45 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importiere CommonModule für ngClass
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule],  // Füge CommonModule zu den Imports hinzu
+  imports: [],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']  // Korrektur: styleUrls statt styleUrl
+  styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  //Dropdown Logik
+  dropdowns: Record<string, boolean> = {
+    services: false,
+    schulplattformen: false
+  };
+
+  // Zeigt das Dropdown an
+  showDropdown(menu: string) {
+    this.dropdowns[menu] = true;
+  }
+
+  hideDropdown(menu: string) {
+    setTimeout(() => {
+      if (!this.isMouseOverDropdown) {
+        this.dropdowns[menu] = false;
+      }
+    }, 200);  // Kleine Verzögerung, um den Wechsel Button → Menü zu erkennen
+  }
+
+  isMouseOverDropdown = false;
+
+  enterDropdown() {
+    this.isMouseOverDropdown = true;
+  }
+
+  leaveDropdown(menu: string) {
+    this.isMouseOverDropdown = false;
+    this.dropdowns[menu] = false;
+  }
+  
+  
+  //Easteregg
   clickCount = 0;
   showImage = false;
   lastClickTime = 0;

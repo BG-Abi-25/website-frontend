@@ -2,7 +2,7 @@
 .navbar {
   font-family: "Nunito";
   position: fixed;  /* Fixiert die Navbar */
-  top: 200px;           /* Immer oben */
+  top: 0px;           /* Immer oben */
   width: 97%;      /* Nimmt die gesamte Breite ein */
   z-index: 1000;    /* Stellt sicher, dass sie über anderen Elementen bleibt */
   display: flex;
@@ -10,7 +10,7 @@
   align-items: center;
   background-color: #333;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 40px;
 }
 
 .logo img {
@@ -49,13 +49,6 @@
   transform: scale(1.05); /* Leichtes Anheben */
 }
 
-.nav-links .active {
-  font-weight: bold;
-  border-bottom: 2px solid white;
-  color: #ff6600; /* Helle Akzentfarbe */
-  border-bottom: 3px solid #ff6600;
-}
-
 /* Dropdown Styles */
 .dropdown {
   position: relative;
@@ -71,7 +64,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   left: 50%; /* Setzt den linken Rand auf die Mitte des Buttons */
   transform: translateX(-50%); /* Verschiebt das Dropdown um 50% seiner Breite nach links, um es mittig auszurichten */
-  width: max-content;
+  margin-top: 15px;
+}
+
+.dropdown-content.show {
+  display: block;
 }
 
 .dropdown-content a {
@@ -85,15 +82,6 @@
   background-color: #333;
   border-color: #0056b3;
   transform: scale(1.05); /* Leichtes Anheben */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #0056b3; /* Dunklerer Blauton */
-  border-color: #0056b3;
 }
 
 .easteregg.show{
