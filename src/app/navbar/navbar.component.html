@@ -9,6 +9,8 @@
 </head>
 <body>
   
+  <img *ngIf="showImage" src="images/1.jpeg" alt="Bild" /> <!-- Easteregg -->
+
   <nav class="navbar">
     <div class="logo">
       <img src="assets/logo.png" alt="Logo" />
@@ -25,7 +27,7 @@
         </div>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Schulplattformen</a>
+        <a href="#" class="dropbtn" (click)="countClicks()">Schulplattformen</a>
         <div class="dropdown-content">
           <a href="https://bw.schule/login" target="_blank">Moodle</a>
           <a href="https://perseus.webuntis.com/WebUntis/?school=burg-gym#/basic/login">Untis</a>

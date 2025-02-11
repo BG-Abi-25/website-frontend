@@ -69,10 +69,9 @@
   z-index: 1;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  overflow: hidden; /* Verhindert Überlauf */
   left: 50%; /* Setzt den linken Rand auf die Mitte des Buttons */
   transform: translateX(-50%); /* Verschiebt das Dropdown um 50% seiner Breite nach links, um es mittig auszurichten */
-  margin-top: 15px;
+  
 }
 
 .dropdown-content a {
@@ -83,9 +82,9 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #0056b3; /* Dunklerer Blauton */
+  background-color: #333;
   border-color: #0056b3;
-  transform: none; /* Entfernt das Anheben für Dropdown-Links */
+  transform: scale(1.05); /* Leichtes Anheben */
 }
 
 .dropdown:hover .dropdown-content {
