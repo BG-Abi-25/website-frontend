@@ -1,11 +1,31 @@
 .calendar-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 30%;
-  height: 100%;
-  background-color: #f9f9f9; /* optional: Hintergrundfarbe */
-  border-left: 1px solid #ddd; /* optional: Trennlinie */
-  padding: 10px; /* optional: Innenabstand */
-  overflow-y: auto; /* optional: Scrollen ermöglichen */
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.event-icon {
+  margin-right: 10px;
+  color: #1976d2; 
+}
+
+.event-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.event-title {
+  flex-grow: 1;
 }
