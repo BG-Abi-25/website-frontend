@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Importiere CommonModule für ngClass
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [CommonModule],  // Füge CommonModule zu den Imports hinzu
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']  // Korrektur: styleUrls statt styleUrl
 })
 export class NavbarComponent {
   clickCount = 0;
@@ -25,7 +26,7 @@ export class NavbarComponent {
     this.lastClickTime = currentTime;
 
     // Wenn 3 schnelle Klicks erreicht sind
-    if (this.clickCount === 3) {
+    if (this.clickCount == 3) {
       this.showImage = true;
     }
   }
