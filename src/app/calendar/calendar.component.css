@@ -1,25 +1,11 @@
 .calendar-container {
-  position: absolute;
-  right: 20px;
-  top: 100px;
-  width: 300px;
-  background: #222;
-  padding: 15px;
-  border-radius: 8px;
-  color: white;
-}
-
-.event {
-  border-left: 3px solid orange;
-  padding-left: 10px;
-  margin-bottom: 10px;
-}
-
-.date {
-  font-weight: bold;
-  color: lightgray;
-}
-
-.title {
-  color: orange;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #f9f9f9; /* optional: Hintergrundfarbe */
+  border-left: 1px solid #ddd; /* optional: Trennlinie */
+  padding: 10px; /* optional: Innenabstand */
+  overflow-y: auto; /* optional: Scrollen ermöglichen */
 }

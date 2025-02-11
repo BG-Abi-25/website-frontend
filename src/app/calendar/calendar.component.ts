@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.css']
+  styleUrls: ['./calendar.component.css'],
+  standalone: true,
+  imports: [MatDatepickerModule, MatNativeDateModule]
 })
-export class CalendarComponent {
-  events = [
-    { date: new Date(2025, 3, 4), title: 'Abitur Chemie' },
-    { date: new Date(2025, 3, 7), title: 'Schriftliches Abitur Informationstechnik' },
-    { date: new Date(2025, 3, 9), title: 'Schriftliches Abitur Mathematik' }
-  ];
-}
+export class CalendarComponent {}
