@@ -1,0 +1,29 @@
+.entry {
+    width: 40vw;
+    margin: auto;
+}
+
+.image {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+    width: 40vw;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author {
+    color: white;
+}
+
+.hashtag {
+    color: blue;
+}
+
+.article {
+    color: white;
+    font-size: clamp(0.5vw, 1vw, 2vw);
+}

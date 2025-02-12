@@ -1,3 +1,19 @@
-.distance-top {
-    margin-top: 5vw;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0; /* Kein zusätzlicher Abstand */
+  padding: 0; /* Kein zusätzlicher Abstand */
+}
+
+.blogs-container {
+  flex: 0 0 70%; /* 70% der Breite */
+  margin: 0; /* Kein zusätzlicher Abstand */
+  padding: 0; /* Kein zusätzlicher Abstand */
+}
+
+.calendar-container {
+  flex: 0 0 30%; /* 30% der Breite */
+  margin: 0; /* Kein zusätzlicher Abstand */
+  padding: 0; /* Kein zusätzlicher Abstand */
 }
