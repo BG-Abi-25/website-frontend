@@ -19,10 +19,11 @@
 }
 
 .component-text {
-    margin-left: 16px;
+    margin-left: 1vw;
     color: white;
     font-size: clamp(0.8vw, 1vw, 1.6vw);
     text-decoration: none;
+
 }
 
 .component-text-header {
@@ -35,9 +36,11 @@
     text-decoration: none;
 }
 
-.component-text-header p {
-    max-width: 100%;
-    word-wrap: break-word;
+.component-text-preview {
+    margin-top: auto;
+    overflow-y: hidden;
+    break-inside: auto;
+    
 }
 
 :hover.component {
