@@ -9,27 +9,32 @@
 </head>
 <body>
   
+  
+
   <nav class="navbar">
     <div class="logo">
       <img src="assets/logo.png" alt="Logo" />
     </div>
     <ul class="nav-links">
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Schulprofil" target="_blank">Schulprofil</a></li>
+      <li><a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Unsere_Schule" target="_blank">Unsere Schule</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Services</a>
-        <div class="dropdown-content">
-          <a routerLink="/web-design">Web Design</a>
-          <a routerLink="/seo">SEO</a>
-          <a routerLink="/marketing">Marketing</a>
+        <a href="#" class="dropbtn" (mouseenter)="showDropdown('services')" (mouseleave)="hideDropdown('services')">Downloads</a>
+        <div class="dropdown-content" [class.show]="dropdowns['services']" (mouseenter)="enterDropdown()" (mouseleave)="leaveDropdown('services')">
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Sch%C3%BClerinnen_und_Sch%C3%BCler" target="_blank">Schülerinnen und Schüler</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Elternbriefe" target="_blank">Elternbriefe</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Sonstiges" target="_blank">Sonstiges</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Entschuldigungsvorlage" target="_blank">Entschuldigungsvorlage</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Elternbeirat_-_Zuschussantrag" target="_blank">Elternbeirat - Zuschussantrag</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Schulplattformen</a>
-        <div class="dropdown-content">
+        <a href="#" class="dropbtn" (click)="countClicks()" (mouseenter)="showDropdown('schulplattformen')" (mouseleave)="hideDropdown('schulplattformen')">Schulplattformen</a>
+        <div class="dropdown-content" [class.show]="dropdowns['schulplattformen']" (mouseenter)="enterDropdown()" (mouseleave)="leaveDropdown('schulplattformen')">
           <a href="https://bw.schule/login" target="_blank">Moodle</a>
           <a href="https://perseus.webuntis.com/WebUntis/?school=burg-gym#/basic/login">Untis</a>
           <a href="https://filr-schulen.schorndorf.de/filr/login">Cloud</a>
+          <img [class.show]="showImage" class="easteregg" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/04/62/e6/0462e6b9-45b0-f229-afc0-d2f79cce2cf4/artwork.jpg/1200x1200bf-60.jpg" alt="Bild" /> <!-- Easteregg -->
         </div>
       </li>
     </ul>
