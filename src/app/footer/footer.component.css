@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1; /* Damit der Footer immer unten bleibt */
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Abstand zwischen den Logos */
+    max-width: 90%;
+}
+
+.logo-box {
+    text-align: center;
+    max-width: 200px;
+}
+
+.logo-box img {
+    width: 100px; /* Größe der Logos */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-box p {
+    font-size: 14px;
+}
