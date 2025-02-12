@@ -16,14 +16,16 @@
       <img src="assets/logo.png" alt="Logo" />
     </div>
     <ul class="nav-links">
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Schulprofil" target="_blank">Schulprofil</a></li>
+      <li><a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Unsere_Schule" target="_blank">Unsere Schule</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn" (mouseenter)="showDropdown('services')" (mouseleave)="hideDropdown('services')">Services</a>
+        <a href="#" class="dropbtn" (mouseenter)="showDropdown('services')" (mouseleave)="hideDropdown('services')">Downloads</a>
         <div class="dropdown-content" [class.show]="dropdowns['services']" (mouseenter)="enterDropdown()" (mouseleave)="leaveDropdown('services')">
-          <a routerLink="/web-design">Web Design</a>
-          <a routerLink="/seo">SEO</a>
-          <a routerLink="/marketing">Marketing</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Sch%C3%BClerinnen_und_Sch%C3%BCler" target="_blank">Schülerinnen und Schüler</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Elternbriefe" target="_blank">Elternbriefe</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Sonstiges" target="_blank">Sonstiges</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Entschuldigungsvorlage" target="_blank">Entschuldigungsvorlage</a>
+          <a href="https://bg.schorndorf.de/Website/Seiten/Aktuell/Startseite/Downloads/Elternbeirat_-_Zuschussantrag" target="_blank">Elternbeirat - Zuschussantrag</a>
         </div>
       </li>
       <li class="dropdown">
