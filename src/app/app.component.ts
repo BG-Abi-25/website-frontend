@@ -5,8 +5,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [NavbarComponent, BlogsComponent, CalendarComponent],
+  imports: [NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
