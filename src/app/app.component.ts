@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from './navbar/navbar.component'; 
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { BlogsComponent } from './blogs/blogs.component';
 
 @Component({
   selector: 'app-root',
-  imports: [BlogsComponent, NavbarComponent],
+  imports: [NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'website-frontend';
