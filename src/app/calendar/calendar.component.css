@@ -1,0 +1,117 @@
+.calendar-block {
+  background-color: #817c7c;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Den gesamten verfügbaren Platz einnehmen */
+  justify-content: flex-start;
+  border-radius: 1vw;
+  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
+  max-height: 80vh; /* Maximale Höhe auf 80% der Ansichtsfensterhöhe setzen */
+}
+
+.calendar-header {
+  background-color: #8d8686;
+  padding: 1%;
+  border-radius: 1vw;
+  margin-bottom: 1%;
+  color: white;
+  text-align: center;
+  font-size: 2em; /* Größe der Überschrift anpassen */
+}
+
+.events-list {
+  margin-top: 10px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Hintergrund transparent */
+  border: none; /* Keine Rahmen */
+  border-radius: 0; /* Kein Radius */
+  padding: 10px 0; /* Abstand oben und unten */
+  margin: 0; /* Kein zusätzlicher Abstand */
+  cursor: pointer; /* Zeigt, dass das Event anklickbar ist */
+  transition: background-color 0.3s ease, border-radius 0.3s ease, width 0.3s ease; /* Sanfte Änderungen */
+}
+
+.event-item:hover {
+  background-color: rgba(240, 240, 240, 0.5); /* Heller beim Hovern */
+  border-radius: 1vw; /* Abgerundete Ecken beim Hovern */
+  width: calc(100% - 2%); /* Ganze Breite nutzen mit kleinem Abstand */
+  margin-left: 1%; /* Zentrieren mit gleichem Abstand links und rechts */
+}
+
+.event-icon-container {
+  margin-right: 10px;
+}
+
+.event-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1976d2;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px; /* Spitzer abgerundet */
+  text-align: center;
+  border: 1px solid #1976d2; /* Minimaler dünner Rand */
+}
+
+.event-date-top {
+  background-color: #90caf9;
+  width: 100%;
+  padding: 2px 0;
+  font-size: 12px;
+  border-radius: 5px 5px 0 0; /* Ecken leicht abrunden */
+  border: 1px solid #1976d2; /* Minimaler dünner Rand */
+  border-bottom: none; /* Entfernen des unteren Randes */
+}
+
+.event-date-middle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-date-bottom {
+  background-color: #90caf9;
+  width: 100%;
+  padding: 2px 0;
+  font-size: 12px;
+  border-radius: 0 0 5px 5px; /* Ecken leicht abrunden */
+  border: 1px solid #1976d2; /* Minimaler dünner Rand */
+  border-top: none; /* Entfernen des oberen Randes */
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.2em;
+  margin-bottom: 5px; /* Reduzierter Abstand zum Zeitbereich */
+}
+
+.event-time {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 5px; /* Reduzierter Abstand zur Beschreibung */
+}
+
+.event-description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fast durchsichtige Linie */
+  margin: 0; /* Kein zusätzlicher Abstand */
+}
