@@ -2,12 +2,10 @@
     background-color: #817c7c;
     padding: 0.5%;
     display: flex;
-    width: 70vw;
     max-height: 20vw;
     justify-content: flex-start;
     border-radius: 1vw;
     overflow: hidden;
-    margin-left: 2vw;
     margin-top: 1vw;
 }
 

@@ -8,10 +8,3 @@ import { NavbarComponent } from './app/navbar/navbar.component';
 import { BlogComponent } from './app/blogs/blog/blog.component';
 
 bootstrapApplication(NavbarComponent).catch(err => console.error(err));
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideHttpClient(),
-    MatDatepickerModule,
-    MatNativeDateModule
-  ]
-}).catch(err => console.error(err));
