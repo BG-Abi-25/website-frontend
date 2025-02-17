@@ -1,20 +1,24 @@
 .calendar-block {
-  background-color: #817c7c;
-  padding: 1%;
+  background-color: rgba(141, 134, 134, 0.5); /* Ursprüngliche Hintergrundfarbe */
+  padding: 1%; /* Ursprüngliches Padding */
   display: flex;
   flex-direction: column;
-  width: 100%; /* Den gesamten verfügbaren Platz einnehmen */
+  width: calc(15% - 1vw); /* Breite anpassen, um 1vw Abstand zu den Blogposts zu gewährleisten */
   justify-content: flex-start;
   border-radius: 1vw;
-  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
-  max-height: 80vh; /* Maximale Höhe auf 80% der Ansichtsfensterhöhe setzen */
+  position: fixed; /* Fixierte Position */
+  top: 120px; /* Abstand zur oberen Kante */
+  right: 1vw; /* Abstand zum rechten Bildschirmrand */
+  margin-left: 1vw; /* Abstand zu den Blogposts */
+  height: auto; /* Höhe automatisch anpassen */
+  overflow: hidden; /* Scrollen innerhalb des Blocks deaktivieren */
 }
 
 .calendar-header {
-  background-color: #8d8686;
-  padding: 1%;
-  border-radius: 1vw;
-  margin-bottom: 1%;
+  background-color: rgba(141, 134, 134, 0.5); /* Ursprüngliche Hintergrundfarbe */
+  padding: 1%; /* Ursprüngliches Padding */
+  border-radius: 1vw; /* Ursprüngliche Abrundung */
+  margin-bottom: 1%; /* Ursprünglicher Abstand */
   color: white;
   text-align: center;
   font-size: 2em; /* Größe der Überschrift anpassen */
@@ -22,6 +26,7 @@
 
 .events-list {
   margin-top: 10px;
+  overflow-y: hidden; /* Scrollen im Block deaktivieren */
 }
 
 .event-item {
@@ -33,18 +38,24 @@
   padding: 10px 0; /* Abstand oben und unten */
   margin: 0; /* Kein zusätzlicher Abstand */
   cursor: pointer; /* Zeigt, dass das Event anklickbar ist */
-  transition: background-color 0.3s ease, border-radius 0.3s ease, width 0.3s ease; /* Sanfte Änderungen */
+  transition: background-color 0.3s ease, width 0.3s ease; /* Sanfte Änderungen */
+  width: 100%; /* Ganze Breite nutzen */
 }
 
 .event-item:hover {
   background-color: rgba(240, 240, 240, 0.5); /* Heller beim Hovern */
-  border-radius: 1vw; /* Abgerundete Ecken beim Hovern */
-  width: calc(100% - 2%); /* Ganze Breite nutzen mit kleinem Abstand */
-  margin-left: 1%; /* Zentrieren mit gleichem Abstand links und rechts */
+  margin: 0; /* Kein zusätzlicher Abstand */
 }
 
 .event-icon-container {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
+}
+
+.multi-day-event-icons {
+  display: flex;
+  align-items: center;
 }
 
 .event-icon {
@@ -59,6 +70,7 @@
   border-radius: 5px; /* Spitzer abgerundet */
   text-align: center;
   border: 1px solid #1976d2; /* Minimaler dünner Rand */
+  margin-right: 5px; /* Abstand zwischen Start- und Enddatum */
 }
 
 .event-date-top {
@@ -114,4 +126,20 @@
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1); /* Fast durchsichtige Linie */
   margin: 0; /* Kein zusätzlicher Abstand */
+}
+
+.more-events-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Abstand zum letzten Event */
+}
+
+.more-events-button:hover {
+  background-color: #125aa3;
 }
