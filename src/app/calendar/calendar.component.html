@@ -6,7 +6,6 @@
     <div *ngFor="let event of events | slice:0:8">
       <div class="event-item">
         <div class="event-icon-container">
-          <!-- Nur ein Symbol für eintägige Ereignisse anzeigen -->
           <div *ngIf="isSameDay(event.startDate, event.endDate)">
             <div class="event-icon">
               <div class="event-date-top">{{ event.startDate | date: 'MMM' }}</div>
@@ -14,7 +13,6 @@
               <div class="event-date-bottom">{{ event.startDate | date: 'EEE' }}</div>
             </div>
           </div>
-          <!-- Zwei Symbole für mehrtägige Ereignisse anzeigen -->
           <div *ngIf="!isSameDay(event.startDate, event.endDate)" class="multi-day-event-icons">
             <div class="event-icon">
               <div class="event-date-top">{{ event.startDate | date: 'MMM' }}</div>
