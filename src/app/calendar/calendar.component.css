@@ -1,50 +1,61 @@
 .calendar-block {
-  background-color: #817c7c;
+  background-color: rgba(141, 134, 134, 0.5); 
   padding: 1%;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Den gesamten verfügbaren Platz einnehmen */
+  width: calc(15% - 1vw); 
   justify-content: flex-start;
   border-radius: 1vw;
-  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
-  max-height: 80vh; /* Maximale Höhe auf 80% der Ansichtsfensterhöhe setzen */
+  position: fixed; 
+  top: 120px; 
+  right: 1vw; 
+  margin-left: 1vw; 
+  height: auto; 
+  overflow: hidden; 
 }
 
 .calendar-header {
-  background-color: #8d8686;
-  padding: 1%;
-  border-radius: 1vw;
-  margin-bottom: 1%;
+  background-color: rgba(141, 134, 134, 0.5); 
+  padding: 1%; 
+  border-radius: 1vw; 
+  margin-bottom: 1%; 
   color: white;
   text-align: center;
-  font-size: 2em; /* Größe der Überschrift anpassen */
+  font-size: 2em; 
 }
 
 .events-list {
   margin-top: 10px;
+  overflow-y: hidden; 
 }
 
 .event-item {
   display: flex;
   align-items: center;
-  background-color: transparent; /* Hintergrund transparent */
-  border: none; /* Keine Rahmen */
-  border-radius: 0; /* Kein Radius */
-  padding: 10px 0; /* Abstand oben und unten */
-  margin: 0; /* Kein zusätzlicher Abstand */
-  cursor: pointer; /* Zeigt, dass das Event anklickbar ist */
-  transition: background-color 0.3s ease, border-radius 0.3s ease, width 0.3s ease; /* Sanfte Änderungen */
+  background-color: transparent; 
+  border: none; 
+  border-radius: 0;
+  padding: 10px 0; 
+  margin: 0; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, width 0.3s ease; 
+  width: 100%; 
 }
 
 .event-item:hover {
-  background-color: rgba(240, 240, 240, 0.5); /* Heller beim Hovern */
-  border-radius: 1vw; /* Abgerundete Ecken beim Hovern */
-  width: calc(100% - 2%); /* Ganze Breite nutzen mit kleinem Abstand */
-  margin-left: 1%; /* Zentrieren mit gleichem Abstand links und rechts */
+  background-color: rgba(240, 240, 240, 0.5); 
+  margin: 0; 
 }
 
 .event-icon-container {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
+}
+
+.multi-day-event-icons {
+  display: flex;
+  align-items: center;
 }
 
 .event-icon {
@@ -56,9 +67,10 @@
   color: white;
   width: 60px;
   height: 60px;
-  border-radius: 5px; /* Spitzer abgerundet */
+  border-radius: 5px; 
   text-align: center;
-  border: 1px solid #1976d2; /* Minimaler dünner Rand */
+  border: 1px solid #1976d2; 
+  margin-right: 5px; 
 }
 
 .event-date-top {
@@ -66,9 +78,9 @@
   width: 100%;
   padding: 2px 0;
   font-size: 12px;
-  border-radius: 5px 5px 0 0; /* Ecken leicht abrunden */
-  border: 1px solid #1976d2; /* Minimaler dünner Rand */
-  border-bottom: none; /* Entfernen des unteren Randes */
+  border-radius: 5px 5px 0 0; 
+  border: 1px solid #1976d2; 
+  border-bottom: none; 
 }
 
 .event-date-middle {
@@ -81,9 +93,9 @@
   width: 100%;
   padding: 2px 0;
   font-size: 12px;
-  border-radius: 0 0 5px 5px; /* Ecken leicht abrunden */
-  border: 1px solid #1976d2; /* Minimaler dünner Rand */
-  border-top: none; /* Entfernen des oberen Randes */
+  border-radius: 0 0 5px 5px; 
+  border: 1px solid #1976d2; 
+  border-top: none; 
 }
 
 .event-details {
@@ -94,14 +106,14 @@
 
 .event-title {
   font-size: 1.2em;
-  margin-bottom: 5px; /* Reduzierter Abstand zum Zeitbereich */
+  margin-bottom: 5px; 
 }
 
 .event-time {
   font-size: 0.9em;
   font-weight: bold;
   color: #1976d2;
-  margin-bottom: 5px; /* Reduzierter Abstand zur Beschreibung */
+  margin-bottom: 5px; 
 }
 
 .event-description {
@@ -112,6 +124,22 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.1); /* Fast durchsichtige Linie */
-  margin: 0; /* Kein zusätzlicher Abstand */
+  background-color: rgba(0, 0, 0, 0.1); 
+  margin: 0; 
+}
+
+.more-events-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; 
+}
+
+.more-events-button:hover {
+  background-color: #125aa3;
 }
