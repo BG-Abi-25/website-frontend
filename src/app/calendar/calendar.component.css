@@ -61,8 +61,8 @@
   background-color: #1976d2;
   color: white;
   width: 5vw;
-  height: 4.5vw;
-  border-radius: 5px; 
+  height: 5vw;
+  border-radius: 0.3vw; 
   text-align: center;
   border: 1px solid #1976d2; 
   margin-right: 0.32vw; 
@@ -71,7 +71,7 @@
 .event-date-top {
   background-color: #90caf9;
   width: 100%;
-  padding: 2px 0;
+  padding: 0.4vw 0;
   font-size: 12px;
   border-radius: 5px 5px 0 0; 
   border: 1px solid #1976d2; 
@@ -79,14 +79,14 @@
 }
 
 .event-date-middle {
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: bold;
 }
 
 .event-date-bottom {
   background-color: #90caf9;
   width: 100%;
-  padding: 2px 0;
+  padding: 0.4vw 0;
   font-size: 12px;
   border-radius: 0 0 5px 5px; 
   border: 1px solid #1976d2; 
