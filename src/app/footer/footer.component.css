@@ -4,27 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content {
-    flex: 1; /* Damit der Footer immer unten bleibt */
-}
-
 footer {
-    width: 100%;
-    background-color: black;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 0;
+  position: absolute;  
+  width: 100%;
+  background-color: black;
+  padding: 1.2vw 0;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  font-family: "Nunito";
+  color: white;
 }
 
 .logo-container {
@@ -32,21 +21,30 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px; /* Abstand zwischen den Logos */
+    gap: 2.1vw; /* Abstand zwischen den Logos */
     max-width: 90%;
+}
+
+.logo-box:hover {
+  background-color: #0057b327;
+  border-color: #0057b327;
+  transform: scale(1.05); /* Leichtes Anheben */
 }
 
 .logo-box {
     text-align: center;
-    max-width: 200px;
+    max-width: 10.42vw;
+    padding: 0.52vw 0.52vw;
+    border-radius: 1vw;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .logo-box img {
-    width: 100px; /* Größe der Logos */
+    width: 5.2vw; /* Größe der Logos */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.52vw;
 }
 
 .logo-box p {
-    font-size: 14px;
+    font-size: 0.73vw;
 }
