@@ -3,15 +3,10 @@
   padding: 1%;
   display: flex;
   flex-direction: column;
-  width: calc(15% - 1vw); 
   justify-content: flex-start;
   border-radius: 1vw;
-  position: fixed; 
-  top: 120px; 
   right: 1vw; 
-  margin-left: 1vw; 
   height: auto; 
-  overflow: hidden; 
 }
 
 .calendar-header {
@@ -65,12 +60,12 @@
   justify-content: center;
   background-color: #1976d2;
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 5vw;
+  height: 4.5vw;
   border-radius: 5px; 
   text-align: center;
   border: 1px solid #1976d2; 
-  margin-right: 5px; 
+  margin-right: 0.32vw; 
 }
 
 .event-date-top {
