@@ -20,7 +20,13 @@
 }
 
 .hashtag {
+    margin-top: -0.4vw;
     color: blue;
+    text-decoration: none;
+}
+
+.hashtag:hover {
+    text-decoration: underline;
 }
 
 .article {
