@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     overflow: hidden; /* falls das Bild etwas größer ist */
+    margin-top: -20vw;
   }
 
   .hero img {
