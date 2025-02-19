@@ -4,8 +4,48 @@
     margin-top: -20vw;
   }
 
-  .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+.hero-slide:nth-child(1) {
+  background-image: url('img/hero.2.png');
+  animation-delay: 0s;
+}
+
+.hero-slide:nth-child(2) {
+  background-image: url('img/john-pork.jpeg');
+  animation-delay: 5s;
+}
+
+.hero-slide:nth-child(3) {
+  background-image: url('img/BG-LOGO2.png');
+  animation-delay: 10s;
+}
+
+/* Keyframes für den Fade-Effekt */
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
