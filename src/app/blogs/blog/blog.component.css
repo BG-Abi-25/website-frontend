@@ -44,8 +44,8 @@
 :hover.component {
     background-color: #8d8686;
     cursor: pointer;
-    
-
+    transform: scale(1.01);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .link {

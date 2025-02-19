@@ -8,8 +8,10 @@
 .calender {
     margin-left: 1vw;
     margin-top: 1vw;
+    width: 25vw;
 }
 
 .blogs {
     width: 80vw;
+    max-width: 75%;
 }
