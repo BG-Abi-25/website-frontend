@@ -1,6 +1,5 @@
 # Farbcodes
 
-## Standard: 
-#61b27d
-## Link: 
-#2fd569
+| Standard      | Link Hover    |
+| ------------- | ------------- |
+| `#61b27d`     | `#2fd569`     |
