@@ -1,50 +1,37 @@
+/*Slideshow*/
 .hero {
   width: 100%;
-  overflow: hidden; /* falls das Bild etwas größer ist */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.hero-slide {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: center;
-opacity: 0;
-animation: fade 15s infinite;
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-slide:nth-child(1) {
-background-image: url('https://www.bjw.de/wp-content/uploads/2015/01/2826_01-1500x1000.jpg');
-animation-delay: 0s;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 15s infinite;
 }
 
-.hero-slide:nth-child(2) {
-background-image: url('https://bg.schorndorf.de/dateien/website/Fotos/2020-2021/BGSonnenuntergang.jpg');
-animation-delay: 5s;
-}
-
-.hero-slide:nth-child(3) {
- background-image: url('https://www.bjw.de/wp-content/uploads/2015/01/2826_19-1500x1000.jpg'); */
-animation-delay: 10s;
-}
-
-/* Keyframes für den Fade-Effekt */
 @keyframes fade {
-0% {
-  opacity: 0;
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
 }
-10% {
-  opacity: 1;
-}
-33% {
-  opacity: 1;
-}
-43% {
-  opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
+
+/* Verzögerungen für jedes Bild */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }

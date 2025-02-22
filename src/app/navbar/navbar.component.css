@@ -3,14 +3,14 @@
   font-family: "Nunito";
   position: fixed;  /* Fixiert die Navbar */
   top: 0px;           /* Immer oben */
-  width: 97%;      /* Nimmt die gesamte Breite ein */
+  width: 98%;      /* Nimmt die gesamte Breite ein */
   z-index: 1000;    /* Stellt sicher, dass sie über anderen Elementen bleibt */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 0.6vw;
-  border-radius: 1vw;
+  border-radius: 0 0 1vw 1vw;
 }
 
 .logo img {
