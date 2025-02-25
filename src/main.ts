@@ -6,5 +6,12 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { appConfig } from './app/app.config';
 import { NavbarComponent } from './app/navbar/navbar.component';
 import { BlogComponent } from './app/blogs/blog/blog.component';
+import { provideRouter } from '@angular/router'; // 🚀 Router importieren!
+import { routes } from './app/app.routes'; // 🚀 Die Routen importieren!
 
-bootstrapApplication(NavbarComponent).catch(err => console.error(err));
+bootstrapApplication(AppComponent, {
+    providers: [
+      provideHttpClient(),
+      provideRouter(routes) // 🚀 Routing aktivieren
+    ]
+  }).catch(err => console.error(err));
