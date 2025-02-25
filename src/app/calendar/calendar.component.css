@@ -39,6 +39,7 @@
 
 .event-item:hover {
   background-color: rgba(240, 240, 240, 0.5); 
+  border-radius: 0.3vw;
   margin: 0; 
 }
 
@@ -125,7 +126,7 @@
 }
 
 .more-events-button {
-  background-color: #1976d2;
+  background-color: #61b27d;
   color: white;
   padding: 10px;
   text-align: center;
@@ -137,5 +138,5 @@
 }
 
 .more-events-button:hover {
-  background-color: #125aa3;
+  background-color: rgba(240, 240, 240, 0.5); 
 }
