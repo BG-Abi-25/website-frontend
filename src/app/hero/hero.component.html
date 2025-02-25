@@ -7,6 +7,8 @@
   <button class="prev" (click)="changeSlide(-1)">&#10094;</button>
   <button class="next" (click)="changeSlide(1)">&#10095;</button>
   <div class="dots-container">
-    <span class="dot" *ngFor="let dot of slides; let i = index" [class.active]="i === currentSlide" (click)="setSlide(i)"></span>
+    @for (let i = 0; i < slides.length; i++) {
+      <span class="dot" [class.active]="i === currentSlide" (click)="setSlide(i)"></span>
+    }
   </div>
 </section>
