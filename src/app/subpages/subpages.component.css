@@ -1,0 +1,33 @@
+.sidebar {
+    margin-left: 10vw;
+    background-color: #333;
+    height: auto;
+    width: 10vw;
+    font-size: 1.2vw;
+    border-radius: 0.4vw;
+    
+}
+
+.info {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.element {
+    text-decoration: none;
+    color: white;
+    display: felx;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.element :hover {
+    background-color: #61b27d;
+    transform: scale(1.05);
+    border-radius: 0.4vw;
+}
