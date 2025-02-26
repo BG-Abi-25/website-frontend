@@ -44,7 +44,7 @@ jobs:
         with:
           registry: ${{ secrets.REGISTRY_URL }}
           username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
+          password: ${{ secrets.REGISTRY_PAT }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
