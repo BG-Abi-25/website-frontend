@@ -1,18 +1,18 @@
 <section class="hero">
   <div class="slideshow-container">
     <!-- Bildbereich -->
-    <div class="slideshow-image" [ngStyle]="{'background-image': 'url(' + images[currentIndex] + ')'}">
+    <div class="slideshow-image" [style.backgroundImage]="'url(' + images[currentIndex] + ')'">
       <div class="image-fade"></div>
     </div>
-  
+
     <!-- Pfeile -->
     <button (click)="prevImage()" class="arrow prev">←</button>
     <button (click)="nextImage()" class="arrow next">→</button>
-  
+
     <!-- Progressbar -->
     <div class="progressbar-container">
       <div class="progressbar">
-        <div class="progress-bar" [ngStyle]="{ width: progressBarWidth + '%' }"></div>
+        <div class="progress-bar" [style.width]="progressBarWidth + '%'"></div>
       </div>
     </div>
   </div>
