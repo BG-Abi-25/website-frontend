@@ -3,6 +3,17 @@
     margin: auto;
 }
 
+.header {
+    color: white;
+    font-size: clamp(0.7vw, 1.2vw, 2.2vw);
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.3vw;
+}
+
 .image {
     height: 100%;
     object-fit: cover;
@@ -12,24 +23,36 @@
 
 .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .author {
     color: white;
+    margin-right: 0.5vw;
+}
+.hashtags {
+    margin-left: 0.5vw;
 }
 
 .hashtag {
     margin-top: -0.4vw;
-    color: blue;
+    color: #61b27d;
     text-decoration: none;
 }
 
 .hashtag:hover {
-    text-decoration: underline;
+    color: #2fd569;
 }
 
 .article {
     color: white;
     font-size: clamp(0.5vw, 1vw, 2vw);
+}
+
+.gap {
+    background-color: #8d8686;
+    height: 0.1vw;
+    width: 40vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
 }
