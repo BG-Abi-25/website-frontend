@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent implements OnInit, OnDestroy {
-  images: string[] = [
+  images: [string, string, string] = [
     'https://www.bjw.de/wp-content/uploads/2015/01/2826_01-1500x1000.jpg',
     'https://bg.schorndorf.de/dateien/website/Fotos/2020-2021/BGSonnenuntergang.jpg',
     'https://www.bjw.de/wp-content/uploads/2015/01/2826_19-1500x1000.jpg'
