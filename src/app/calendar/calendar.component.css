@@ -1,0 +1,141 @@
+.calendar-block {
+  background-color: rgba(141, 134, 134, 0.5); 
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 1vw;
+  right: 1vw; 
+  height: auto; 
+}
+
+.calendar-header {
+  background-color: rgba(141, 134, 134, 0.5); 
+  padding: 1%; 
+  border-radius: 1vw; 
+  margin-bottom: 1%; 
+  color: white;
+  text-align: center;
+  font-size: 2em; 
+}
+
+.events-list {
+  margin-top: 10px;
+  overflow-y: hidden; 
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  background-color: transparent; 
+  border: none; 
+  border-radius: 0;
+  padding: 10px 0; 
+  margin: 0; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, width 0.3s ease; 
+  width: 100%; 
+}
+
+.event-item:hover {
+  background-color: rgba(240, 240, 240, 0.5); 
+  margin: 0; 
+}
+
+.event-icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.multi-day-event-icons {
+  display: flex;
+  align-items: center;
+}
+
+.event-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #61b27d;
+  color: white;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 0.3vw; 
+  text-align: center;
+  border: 1px solid #61b27d; 
+  margin-right: 0.32vw; 
+}
+
+.event-date-top {
+  background-color: #2fd569be;
+  width: 100%;
+  padding: 0.4vw 0;
+  font-size: 12px;
+  border-radius: 5px 5px 0 0; 
+  border: 1px solid #61b27d; 
+  border-bottom: none; 
+}
+
+.event-date-middle {
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+.event-date-bottom {
+  background-color: #2fd569ca;
+  width: 100%;
+  padding: 0.4vw 0;
+  font-size: 12px;
+  border-radius: 0 0 5px 5px; 
+  border: 1px solid #61b27d; 
+  border-top: none; 
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.2em;
+  margin-bottom: 5px; 
+  color: white;
+}
+
+.event-time {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #61b27d;
+  margin-bottom: 5px; 
+}
+
+.event-description {
+  font-size: 0.9em;
+  color: white;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1); 
+  margin: 0; 
+}
+
+.more-events-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; 
+}
+
+.more-events-button:hover {
+  background-color: #125aa3;
+}

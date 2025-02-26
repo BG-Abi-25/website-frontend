@@ -2,19 +2,19 @@
 .navbar {
   font-family: "Nunito";
   position: fixed;  /* Fixiert die Navbar */
-  top: 0px;           /* Immer oben */
+  top: 0vw;           /* Immer oben */
   width: 97%;      /* Nimmt die gesamte Breite ein */
   z-index: 1000;    /* Stellt sicher, dass sie über anderen Elementen bleibt */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 0.6vw;
+  border-radius: 1vw;
 }
 
 .logo img {
-  height: 40px;
+  height: 2vw;
 }
 
 .nav-links {
@@ -27,33 +27,26 @@
 
 .nav-links li {
   position: relative;
-  padding: 0 15px;
-  border-radius: 5px; /* Abgerundete Ecken für Listenelemente */
+  padding: 0 0.78vw;
+  border-radius: 0.26vw; /* Abgerundete Ecken für Listenelemente */
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0.52vw 1.04vw;
   display: inline-block;
   background-color: transparent;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  border: 0.104vw solid transparent;
+  border-radius: 0.26vw;
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #0056b3; /* Dunklerer Blauton */
-  border-color: #0056b3;
+  background-color: #61b27d; /* Dunklerer Blauton */
+  border-color: #61b27d;
   transform: scale(1.05); /* Leichtes Anheben */
-}
-
-.nav-links .active {
-  font-weight: bold;
-  border-bottom: 2px solid white;
-  color: #ff6600; /* Helle Akzentfarbe */
-  border-bottom: 3px solid #ff6600;
 }
 
 /* Dropdown Styles */
@@ -67,32 +60,35 @@
   position: absolute;
   background-color: #333;
   z-index: 1;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  overflow: hidden; /* Verhindert Überlauf */
+  border-radius: 0.416vw;
+  box-shadow: 0 0.208vw 0.416vw rgba(0, 0, 0, 0.15);
   left: 50%; /* Setzt den linken Rand auf die Mitte des Buttons */
   transform: translateX(-50%); /* Verschiebt das Dropdown um 50% seiner Breite nach links, um es mittig auszurichten */
-  margin-top: 15px;
+  margin-top: 0.781vw;
+}
+
+.dropdown-content.show {
+  display: block;
 }
 
 .dropdown-content a {
   color: white;
-  padding: 10px 20px;
+  padding: 0.52vw 1.04vw;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #0056b3; /* Dunklerer Blauton */
-  border-color: #0056b3;
-  transform: none; /* Entfernt das Anheben für Dropdown-Links */
+  background-color: #333;
+  border-color: #61b27d;
+  transform: scale(1.05); /* Leichtes Anheben */
 }
 
-.dropdown:hover .dropdown-content {
+.easteregg.show{
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #0056b3; /* Dunklerer Blauton */
-  border-color: #0056b3;
+.easteregg {
+  display: none;
+  width: 5.208vw;
 }

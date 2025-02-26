@@ -1,8 +1,8 @@
-# Website-Frontend
+# Website: Frontend
 
-Das Frontend-Repository der Website, die im Zuge des Projektes im Informatik-LK des Abitur-Jahrgangs 2025 am Burg-Gymnasium Schorndorf entwickelt wird.
+Das Frontend der Website, die im Zuge des Projektes im Informatik-LK des Abitur-Jahrgangs 2025 am Burg-Gymnasium Schorndorf entwickelt wird.
 
-## Konventionen
+## Code-Konventionen
 
 - [Conventional Commits](https://conventionalcommits.org)
 - [Conventional Branch Names](https://www.geeksforgeeks.org/how-to-naming-conventions-for-git-branches/)
@@ -11,9 +11,9 @@ Das Frontend-Repository der Website, die im Zuge des Projektes im Informatik-LK 
 
 Für die Branches `main` und `dev` werden dedizierte Testumgebungen bereitgestellt, die unter den folgenden Adressen erreichbar sind:
 
-`main`: [informatik-projekt.tech](https://informatik-projekt.tech)
+`main`: [`informatik-projekt.tech`](https://informatik-projekt.tech)
 
-`dev`: [dev.informatik-projekt.tech](https://dev.informatik-projekt.tech) (optional auch: [test.informatik-projekt.tech](https://test.informatik-projekt.tech))
+`dev`: [`dev.informatik-projekt.tech`](https://dev.informatik-projekt.tech) (optional auch: [`test.informatik-projekt.tech`](https://test.informatik-projekt.tech))
 
 ## Angular Docs
 
@@ -76,6 +76,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## Autoren
+
 - [Nils Näckel](https://github.com/nils-nckl)
 - [Nico Hees](https://github.com/omeganh)
 - [Bernd Krohmer](https://github.com/BerndAbi)

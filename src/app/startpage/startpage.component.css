@@ -1,0 +1,17 @@
+.page{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.calender {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    width: 25vw;
+}
+
+.blogs {
+    width: 80vw;
+    max-width: 75%;
+}

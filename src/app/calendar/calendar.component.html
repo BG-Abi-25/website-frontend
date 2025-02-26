@@ -1,0 +1,39 @@
+<div class="calendar-block">
+  <div class="calendar-header">
+    <h3>Anstehende Termine</h3>
+  </div>
+  <div class="events-list">
+    <div *ngFor="let event of events | slice:0:8">
+      <div class="event-item">
+        <div class="event-icon-container">
+          <div *ngIf="isSameDay(event.startDate, event.endDate)">
+            <div class="event-icon">
+              <div class="event-date-top">{{ event.startDate | date: 'MMM' }}</div>
+              <div class="event-date-middle">{{ event.startDate | date: 'dd' }}</div>
+              <div class="event-date-bottom">{{ event.startDate | date: 'EEE' }}</div>
+            </div>
+          </div>
+          <div *ngIf="!isSameDay(event.startDate, event.endDate)" class="multi-day-event-icons">
+            <div class="event-icon">
+              <div class="event-date-top">{{ event.startDate | date: 'MMM' }}</div>
+              <div class="event-date-middle">{{ event.startDate | date: 'dd' }}</div>
+              <div class="event-date-bottom">{{ event.startDate | date: 'EEE' }}</div>
+            </div>
+            <div class="event-icon">
+              <div class="event-date-top">{{ event.endDate | date: 'MMM' }}</div>
+              <div class="event-date-middle">{{ event.endDate | date: 'dd' }}</div>
+              <div class="event-date-bottom">{{ event.endDate | date: 'EEE' }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="event-details">
+          <div class="event-title">{{ event.title }}</div>
+          <div class="event-time">{{ event.time }}</div>
+          <div class="event-description">{{ event.description }}</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <button class="more-events-button">Mehr Einträge anzeigen</button>
+</div>
