@@ -3,7 +3,7 @@
     background-color: #333;
     height: auto;
     width: 10vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
     border-radius: 0.4vw;
     
 }
@@ -11,7 +11,9 @@
 .info {
     font-weight: bold;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
 }
 
 .element {
@@ -19,6 +21,7 @@
     color: white;
     display: felx;
     justify-content: center;
+    margin-bottom: 1vw;
 }
 
 .link {
@@ -29,5 +32,5 @@
 .element :hover {
     background-color: #61b27d;
     transform: scale(1.05);
-    border-radius: 0.4vw;
+    border-radius: 0.2vw;
 }
