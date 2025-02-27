@@ -1,0 +1,42 @@
+.side {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 1vw;
+    width: 40vw;
+    color: gray;
+    display: grid;
+}
+
+.picture {
+    max-width: 40vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.gap {
+    background-color: #8d8686;
+    height: 0.1vw;
+    width: 40vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.heading {
+    font-size: clamp(0.7vw, 1.2vw, 2.2vw);
+    font-weight: bold;
+    margin-top: 0.2vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.text {
+    font-size: clamp(0.5vw, 1vw, 2vw);
+    color: white
+}
