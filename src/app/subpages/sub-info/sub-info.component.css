@@ -1,0 +1,29 @@
+.side {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 2vw;
+    width: 40vw;
+    border-style: dotted;
+    color: white;
+    display:grid;
+}
+
+.picture {
+    max-width: 40vw;
+    object-fit: cover;
+}
+
+.heading {
+    font-size: 1vw;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 0.2vw;
+}
+
+.text {
+    font-size: 0.7vw;
+
+}

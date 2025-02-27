@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZuegeComponent } from './zuege.component';
+import { SubInfoComponent } from './sub-info.component';
 
-describe('ZuegeComponent', () => {
-  let component: ZuegeComponent;
-  let fixture: ComponentFixture<ZuegeComponent>;
+describe('SubInfoComponent', () => {
+  let component: SubInfoComponent;
+  let fixture: ComponentFixture<SubInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ZuegeComponent]
+      imports: [SubInfoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ZuegeComponent);
+    fixture = TestBed.createComponent(SubInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

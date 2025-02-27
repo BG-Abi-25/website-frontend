@@ -4,13 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { EintragComponent } from './blogs/blog/eintrag/eintrag.component';
 import { StartpageComponent } from './startpage/startpage.component';
 import { SubpagesComponent } from './subpages/subpages.component';
-import { ZuegeComponent } from './subpages/zuege/zuege.component';
+import { SubInfoComponent } from './subpages/sub-info/sub-info.component';
 
 export const routes: Routes = [
     {path: '', component: StartpageComponent},  
     {path: 'Eintrag', component: EintragComponent},
-    {path: 'info', component: SubpagesComponent},
-    {path: 'info/zuege', component: ZuegeComponent},
+    {path: 'info', component: SubInfoComponent},
+    {path: 'info/zuege', component: SubpagesComponent},
     {path: '**', redirectTo: '' },
 
     ]
