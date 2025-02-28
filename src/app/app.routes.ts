@@ -5,12 +5,13 @@ import { EintragComponent } from './blogs/blog/eintrag/eintrag.component';
 import { StartpageComponent } from './startpage/startpage.component';
 import { SubpagesComponent } from './subpages/subpages.component';
 import { SubInfoComponent } from './subpages/sub-info/sub-info.component';
+import { SubJubComponent } from './subpages/sub-jub/sub-jub.component';
 
 export const routes: Routes = [
     {path: '', component: StartpageComponent},  
-    {path: 'Eintrag', component: EintragComponent},
+    {path: 'eintrag', component: EintragComponent},
     {path: 'info', component: SubInfoComponent},
-    {path: 'info/zuege', component: SubpagesComponent},
+    {path: 'info/schuljubiläum', component: SubJubComponent},
     {path: '**', redirectTo: '' },
 
     ]
